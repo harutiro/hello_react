@@ -6,11 +6,6 @@ export const App = () => {
         alert();
     };
 
-    const contentPinkStyle = {
-        color: "pink",
-        fontSize: "20px"
-    }
-
     return (
         <>
             {/* ジャバスクリプトの処理をそのまま書くことができる。 */}
@@ -20,9 +15,9 @@ export const App = () => {
             <h1 style={{color: "red"}} >Hello World</h1>
 
             {/* コンポーネントを用いて定義をする。 */}
-            <ColoredMessage/>
+            <ColoredMessage color="blue" >お元気ですか？</ColoredMessage>
+            <ColoredMessage color="pink" >元気です！</ColoredMessage>
 
-            <p style={contentPinkStyle}>元気です！</p>
             <button onClick={onClickButton}>ぼたん</button>
         </>
     );
